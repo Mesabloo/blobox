@@ -1,0 +1,29 @@
+{
+  "name": "blobox",
+  "version": "1.0.0",
+  "description": "A Blob visual editor",
+  "main": "src/main.js",
+  "scripts": {
+    "prestart": "spago build && stack install",
+    "start": "electron ."
+  },
+  "repository": "https://github.com/mesabloo/blobox",
+  "keywords": [
+    "Blob",
+    "Blobox",
+    "Visual editor"
+  ],
+  "author": "Mesabloo",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "electron": "^7.0.0"
+  },
+  "dependencies": {
+    "pulp": "^13.0.0",
+    "purescript": "^0.13.4",
+    "axios": "^0.18.1"
+  },
+  "engines": {
+    "yarn": ">= 1.0.0"
+  }
+}

@@ -1,0 +1,10 @@
+.stack-work/
+blobox.cabal
+*~
+*.lock
+node_modules
+.spago
+.pulp-cache
+output
+package-lock.json
+bin/

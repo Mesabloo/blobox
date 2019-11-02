@@ -1,0 +1,37 @@
+name:                blobox
+version:             0.1.0.0
+github:              "mesabloo/blobox"
+license:             GPL-3
+author:              "Mesabloo"
+copyright:           "2019 Mesabloo"
+
+extra-source-files:
+- README.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/mesabloo/blobox#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- servant-server
+- servant
+- aeson
+- wai
+- warp
+- text
+
+executables:
+  blobox-exe:
+    main:                Main.hs
+    source-dirs:         server
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -O2

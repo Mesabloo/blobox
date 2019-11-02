@@ -16,17 +16,6 @@ header {
 }
 
 #main_panel {
-    display: flex;
-    flex-direction: row;
     width: 100%;
     height: calc(100vh - var(--header-height) - 1px);
-}
-
-#pieces_panel {
-    flex-grow: 1;
-}
-
-#canvas {
-    flex-grow: 2;
-    border-left: 1px solid gray;
 }

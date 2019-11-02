@@ -7,16 +7,24 @@
     <body>
         <header>Test</header>
 
-        <div id='main_panel'>
-            <div id='pieces_panel'>
-                <span id='test'></span>
-            </div>
-            <div id='canvas'>
+        <xml id="toolbox" style="display: none">
+            <block type="controls_if"></block>
+            <block type="controls_repeat_ext"></block>
+            <block type="logic_compare"></block>
+            <block type="math_number"></block>
+            <block type="math_arithmetic"></block>
+            <block type="text"></block>
+            <block type="text_print"></block>
+        </xml>
 
-            </div>
+        <div id='main_panel'>
+
         </div>
 
         <!-- You can also require other files to run in this process -->
-        <script async src="../js/index.js"></script>
+        <script src="../../blocky/blockly_compressed.js"></script>
+        <script src="../../blocky/blocks_compressed.js"></script>
+        <script src="../../blocky/msg/js/en.js"></script>
+        <script src="../js/index.js"></script>
     </body>
 </html>

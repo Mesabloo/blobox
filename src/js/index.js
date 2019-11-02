@@ -8,6 +8,10 @@
 const path = require('path')
 const index = require(path.join(__dirname, '../../output/Blobox.Index'))
 
-document.getElementById('test').innerText = 'test'
+let workspace
+workspace = Blockly.inject('main_panel',
+    { toolbox: document.getElementById('toolbox')
+    , comments: true
+    , sounds: false } )
 
-index.main()
+index.main(workspace)

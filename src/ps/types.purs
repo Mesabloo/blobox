@@ -5,6 +5,7 @@ import Foreign.Generic (class Decode, class Encode, defaultOptions, genericDecod
 import Data.Generic.Rep (class Generic)
 import Data.Generic.Rep.Show (genericShow)
 import Prelude
+import Blobox.Blob.AST as Blob
 
 newtype CResult
     = CResult
@@ -18,7 +19,7 @@ instance showCResult :: Show CResult where
 
 newtype CCode
     = CCode
-    { code :: String }
+    { code :: Blob.Program }
 derive instance genericCCode :: Generic CCode _
 
 instance encodeCCode :: Encode CCode where

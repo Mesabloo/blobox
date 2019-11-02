@@ -14,4 +14,3 @@ workspace = Blockly.inject('main_panel',
     , comments: true
     , sounds: false } )
 
-index.main(workspace)

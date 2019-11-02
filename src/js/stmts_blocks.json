@@ -1,0 +1,51 @@
+[{
+  "type": "definition",
+  "message0": "%1 %2 = %3",
+  "args0": [
+    {
+      "type": "field_input",
+      "name": "fun_name",
+      "text": "f"
+    },
+    {
+      "type": "input_dummy"
+    },
+    {
+      "type": "input_value",
+      "name": "fun_def",
+      "check": "expr"
+    }
+  ],
+  "inputsInline": false,
+  "colour": 120,
+  "tooltip": "f = e",
+  "helpUrl": ""
+},
+{
+  "type": "declaration_definition",
+  "message0": "%1 %2 :: %3 = %4",
+  "args0": [
+    {
+      "type": "field_input",
+      "name": "fun_name",
+      "text": "f"
+    },
+    {
+      "type": "input_dummy"
+    },
+    {
+      "type": "input_value",
+      "name": "fun_type",
+      "check": "type"
+    },
+    {
+      "type": "input_value",
+      "name": "fun_val",
+      "check": "expr"
+    }
+  ],
+  "inputsInline": false,
+  "colour": 120,
+  "tooltip": "f :: t = e",
+  "helpUrl": ""
+}]

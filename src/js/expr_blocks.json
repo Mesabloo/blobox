@@ -1,0 +1,77 @@
+[{
+  "type": "elam",
+  "message0": "λ %1 %2 → %3",
+  "args0": [
+    {
+      "type": "field_input",
+      "name": "var_name",
+      "text": "x"
+    },
+    {
+      "type": "input_dummy"
+    },
+    {
+      "type": "input_value",
+      "name": "expression",
+      "check": "expr",
+      "align": "RIGHT"
+    }
+  ],
+  "inputsInline": true,
+  "output": "expr",
+  "colour": 260,
+  "tooltip": "λx.e",
+  "helpUrl": ""
+},
+{
+  "type": "eapp",
+  "message0": "%1 %2",
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "e1",
+      "check": "expr"
+    },
+    {
+      "type": "input_value",
+      "name": "e2",
+      "check": "expr",
+      "align": "RIGHT"
+    }
+  ],
+  "inputsInline": true,
+  "output": "expr",
+  "colour": 260,
+  "tooltip": "$",
+  "helpUrl": ""
+},
+{
+  "type": "eid",
+  "message0": "%1",
+  "args0": [
+    {
+      "type": "field_input",
+      "name": "var_name",
+      "text": "x"
+    }
+  ],
+  "output": "expr",
+  "colour": 260,
+  "tooltip": "EId",
+  "helpUrl": ""
+},
+{
+  "type": "elit",
+  "message0": "%1",
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "literal",
+      "check": "literal"
+    }
+  ],
+  "output": "expr",
+  "colour": 260,
+  "tooltip": "ELit",
+  "helpUrl": ""
+}]

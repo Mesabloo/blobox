@@ -1,0 +1,74 @@
+[{
+  "type": "tfun",
+  "message0": "%1 → %2",
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "t1",
+      "check": "type"
+    },
+    {
+      "type": "input_value",
+      "name": "t2",
+      "check": "type",
+      "align": "RIGHT"
+    }
+  ],
+  "inputsInline": true,
+  "output": "type",
+  "colour": 20,
+  "tooltip": "t1 -> t2",
+  "helpUrl": ""
+},
+{
+  "type": "tapp",
+  "message0": "%1 %2",
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "t1",
+      "check": "type"
+    },
+    {
+      "type": "input_value",
+      "name": "t2",
+      "check": "type",
+      "align": "RIGHT"
+    }
+  ],
+  "inputsInline": true,
+  "output": "type",
+  "colour": 20,
+  "tooltip": "t1 t2",
+  "helpUrl": ""
+},
+{
+  "type": "tvar",
+  "message0": "%1",
+  "args0": [
+    {
+      "type": "field_input",
+      "name": "tvar_name",
+      "text": "a"
+    }
+  ],
+  "output": "type",
+  "colour": 20,
+  "tooltip": "tvar",
+  "helpUrl": ""
+},
+{
+  "type": "tid",
+  "message0": "%1",
+  "args0": [
+    {
+      "type": "field_input",
+      "name": "type_id",
+      "text": "type"
+    }
+  ],
+  "output": "type",
+  "colour": 20,
+  "tooltip": "tid",
+  "helpUrl": ""
+}]

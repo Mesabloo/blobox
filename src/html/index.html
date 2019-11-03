@@ -7,14 +7,35 @@
     <body>
         <header>Test</header>
 
-        <xml id="toolbox" style="display: none">
-            <block type="controls_if"></block>
-            <block type="controls_repeat_ext"></block>
-            <block type="logic_compare"></block>
-            <block type="math_number"></block>
-            <block type="math_arithmetic"></block>
-            <block type="text"></block>
-            <block type="text_print"></block>
+        <xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
+            <category name="Types" colour="#a5745b">
+                <block type="tfun"></block>
+                <block type="tapp"></block>
+                <block type="tvar">
+                    <field name="tvar_name">a</field>
+                </block>
+                <block type="tid">
+                    <field name="type_id">type</field>
+                </block>
+            </category>
+            <category name="Expressions" colour="#745ba5">
+                <block type="elam">
+                    <field name="var_name">x</field>
+                </block>
+                <block type="eapp"></block>
+                <block type="eid">
+                    <field name="var_name">x</field>
+                </block>
+                <block type="elit"></block>
+            </category>
+            <category name="Statements" colour="#5ba55b">
+                <block type="definition">
+                    <field name="fun_name">f</field>
+                </block>
+                <block type="declaration_definition">
+                    <field name="fun_name">f</field>
+                </block>
+            </category>
         </xml>
 
         <div id='main_panel'>
@@ -24,7 +45,13 @@
         <!-- You can also require other files to run in this process -->
         <script src="../../blocky/blockly_compressed.js"></script>
         <script src="../../blocky/blocks_compressed.js"></script>
+        <script src="../../blocky/javascript_compressed.js"></script>
         <script src="../../blocky/msg/js/en.js"></script>
+
+        <script src="../js/type_blocks.js"></script>
+        <script src="../js/expr_blocks.js"></script>
+        <script src="../js/stmts_blocks.js"></script>
+
         <script src="../js/index.js"></script>
     </body>
 </html>

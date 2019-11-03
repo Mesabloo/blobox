@@ -24,8 +24,8 @@ derive instance genericCCode :: Generic CCode _
 
 instance encodeCCode :: Encode CCode where
     encode = genericEncode (defaultOptions { unwrapSingleConstructors = true })
-instance showCCode :: Show CCode where
-    show = genericShow
+-- instance showCCode :: Show CCode where
+--     show = genericShow
 
 instance axiosCResult :: Axios CCode CResult where
     axios = genericAxios

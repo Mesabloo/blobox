@@ -22,12 +22,13 @@ type Type = Unit -- Not yet implemented
 --     | TFun Type Type
 -- derive instance genericType :: Generic Type _
 
-data Expr
-    = ELit Literal
-    | EId Name
-    | EApp Expr Expr
-    | ELam Name Expr
-derive instance genericExpr :: Generic Expr _
+type Expr = Unit
+-- data Expr
+--     = ELit Literal
+--     | EId Name
+--     | EApp Expr Expr
+--     | ELam Name Expr
+-- derive instance genericExpr :: Generic Expr _
 
 data Literal
     = LInt Int
@@ -43,8 +44,8 @@ instance encodeStatement :: Encode Statement where
 -- instance encodeType :: Encode Type where
 --     encode = genericEncode (defaultOptions { unwrapSingleConstructors = true })
 
-instance encodeExpr :: Encode Expr where
-    encode = genericEncode (defaultOptions { unwrapSingleConstructors = true })
+-- instance encodeExpr :: Encode Expr where
+--     encode = genericEncode (defaultOptions { unwrapSingleConstructors = true })
 
 instance encodeLiteral :: Encode Literal where
     encode = genericEncode (defaultOptions { unwrapSingleConstructors = true })
